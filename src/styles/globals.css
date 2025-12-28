@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #000;
+  
+}
+
+
+.container {
+  @apply max-w-3xl md:max-w-6xl px-[15px] mx-auto;
+}
