@@ -1,0 +1,69 @@
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import React from "react";
+
+const aboutItems = [
+  {
+    status: "Look for better Job",
+    interduce: "Hey, I'm Mohamad Hosein a",
+    position: "Frontend Developer",
+    about:
+      "My name is Mohamad Hossein Gholikhah, I am a Frontend Developer with a passion for creating beautiful and functional web applications. I have experience working with a variety of technologies, including React, Next.js, and Tailwind CSS. I am always looking for new challenges and opportunities to learn and grow as a developer.",
+  },
+];
+const socialItems = [
+  {
+    name: "GitHub",
+    link: "https://github.com/Mohamadhossein4",
+    icon: <Github size={20} />,
+  },
+  {
+    name: "Email",
+    link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
+    icon: <Mail size={20} />,
+  },
+  {
+    name: "Instagram",
+    link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
+    icon: <Instagram size={20} />,
+  },
+];
+const About = () => {
+  return (
+    <>
+      <div className="">
+        {aboutItems.map((items, index) => {
+          return (
+            <div key={index} className="flex flex-col gap-14">
+              <div className="flex items-center gap-6">
+                <div className="relative mb-4">
+                  <div className="absolute w-1.5 h-1.5 bg-amber-300 rounded-full z-10 left-1 top-1"></div>
+                  <div className="absolute w-3.5 h-3.5 bg-amber-100 rounded-full opacity-10"></div>
+                </div>
+                <div className="text-white">{items.status}</div>
+              </div>
+              <div className="text-white text-7xl w-230 leading-28">
+                {items.interduce}
+                <span className="text-white/40 ml-4">{items.position}</span>
+              </div>
+              <div className="flex items-center gap-8 -mt-6">
+                {socialItems.map((items, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-center text-white gap-3 px-8 py-4 rounded-4xl bg-secondary"
+                    >
+                        <div>{items.icon}</div>
+                        <div>{items.name}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default About;

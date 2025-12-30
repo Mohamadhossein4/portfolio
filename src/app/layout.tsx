@@ -8,7 +8,7 @@ import {
 
 import "@/styles/globals.css";
 
-import { morabba } from "@/lib/fonts/font";
+import { gilroy } from "@/lib/fonts/font";
 
 export const metadata: Metadata = {
   title: "Gholikhah",
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html  className={`${morabba.className} scroll-smooth`} lang="fa" dir="rtl" {...mantineHtmlProps}>
+    <html  className={`${gilroy.className} scroll-smooth`} lang="en"  {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
       </head>
