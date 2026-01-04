@@ -1,4 +1,5 @@
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const aboutItems = [
@@ -7,7 +8,7 @@ const aboutItems = [
     interduce: "Hey, I'm Mohamad Hosein a",
     position: "Frontend Developer",
     about:
-      "My name is Mohamad Hossein Gholikhah, I am a Frontend Developer with a passion for creating beautiful and functional web applications. I have experience working with a variety of technologies, including React, Next.js, and Tailwind CSS. I am always looking for new challenges and opportunities to learn and grow as a developer.",
+      "My name is Mohamad Hossein Gholikhah, I am a Frontend Developer with a passion for creating beautiful and functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS. I am always looking for new challenges and opportunities to learn and grow as a developer.",
   },
 ];
 const socialItems = [
@@ -18,7 +19,7 @@ const socialItems = [
   },
   {
     name: "Email",
-    link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
+    link: "mailto:m.h.gholikhah@gmail.com",
     icon: <Mail size={20} />,
   },
   {
@@ -33,7 +34,7 @@ const About = () => {
       <div className="">
         {aboutItems.map((items, index) => {
           return (
-            <div key={index} className="flex flex-col gap-14">
+            <div key={index} className="flex flex-col gap-12">
               <div className="flex items-center gap-6">
                 <div className="relative mb-4">
                   <div className="absolute w-1.5 h-1.5 bg-amber-300 rounded-full z-10 left-1 top-1"></div>
@@ -48,15 +49,19 @@ const About = () => {
               <div className="flex items-center gap-8 -mt-6">
                 {socialItems.map((items, index) => {
                   return (
+                    <Link href={items.link} key={index} >
                     <div
-                      key={index}
-                      className="flex items-center text-white gap-3 px-8 py-4 rounded-4xl bg-secondary"
+                      className="flex items-center justify-center text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary hover:scale-105 transition-all"
                     >
-                        <div>{items.icon}</div>
-                        <div>{items.name}</div>
+                      <div>{items.icon}</div>
+                      <div>{items.name}</div>
                     </div>
+                    </Link>
                   );
                 })}
+              </div>
+              <div className="text-white/40 leading-relaxed border-b border-white/40 pb-14">
+                {items.about}
               </div>
             </div>
           );
