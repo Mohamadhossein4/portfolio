@@ -51,7 +51,7 @@ const About = () => {
                   return (
                     <Link href={items.link} key={index} >
                     <div
-                      className="flex items-center justify-center text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary hover:scale-105 transition-all"
+                      className="flex items-center justify-center text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary delay-150 hover:scale-105 transition-all"
                     >
                       <div>{items.icon}</div>
                       <div>{items.name}</div>
