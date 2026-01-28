@@ -25,6 +25,7 @@
     "next": "16.1.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-snowfall": "^2.4.0",
     "recharts": "^3.6.0"
   },
   "devDependencies": {

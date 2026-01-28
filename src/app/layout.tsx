@@ -4,7 +4,7 @@ import {
   MantineProvider,
   mantineHtmlProps,
 } from "@mantine/core";
-
+import Snowfall from "react-snowfall";
 
 import "@/styles/globals.css";
 
