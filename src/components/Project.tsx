@@ -19,15 +19,15 @@ const ImageStyle = {
 const Project = ({ items }: ProjectProp) => {
   const [project , isproject]= useState("project");
   return (
-    <div className="flex gap-3">
+    <div className="grid grid-cols-2 gap-3">
       {items.map((items, index) => {
         return (
-          <div key={index} className="flex flex-col bg-secondary rounded-2xl p-2 group hover:scale-103 transition-all">
+          <div key={index} className="flex flex-col bg-secondary rounded-2xl p-2 group hover:scale-103 transition-all delay-150">
             
             <div className="flex w-full items-center justify-between mb-6 ">
               <div className="border border-white/10 text-white/80 text-sm py-2 px-5 rounded-xl ">project</div>
               <div>
-                <ArrowUpRight className="hidden group-hover:inline-block text-white/80" />
+                <ArrowUpRight className="opacity-0 group-hover:opacity-100 text-white/80 delay-150" />
               </div>
             </div>
             <div className="flex flex-col text-white/80 mb-10">
@@ -35,11 +35,11 @@ const Project = ({ items }: ProjectProp) => {
               <div className="text-white/30">Description</div>
             </div>
             <div className="flex">
-              <div className="h-50 overflow-hidden group  rounded-2xl">
+              <div className="h-50 overflow-hidden group  rounded-2xl opacity-70">
                 <Image
                   src={items.image}
                   alt=""
-                  className="h-auto transition-transform duration-3000 ease-linear
+                  className="h-auto transition-transform duration-3000  delay-150 ease-linear
                group-hover:-translate-y-[calc(100%-200px)]"
                 />
               </div>
