@@ -9,6 +9,8 @@ import Snowfall from "react-snowfall";
 import "@/styles/globals.css";
 
 import { gilroy } from "@/lib/fonts/font";
+import Menu from "@/components/Menu";
+import Social from "@/components/Social";
 
 export const metadata: Metadata = {
   title: "Gholikhah",
@@ -26,6 +28,10 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
+        <div className="flex flex-col gap-10 fixed top-40 left-6 z-0!">
+        <Menu />
+        <Social/>
+      </div>
         <main>
           <MantineProvider>{children}</MantineProvider>
         </main>
