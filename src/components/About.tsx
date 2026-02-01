@@ -19,10 +19,10 @@ const socialItems = [
     icon: <Github size={20} />,
   },
   {
-    name: "Email",
-    link: "mailto:m.h.gholikhah@gmail.com",
-    icon: <Mail size={20} />,
-  },
+     name: "LinkedIn",
+     link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
+     icon: <Linkedin size={20} />,
+   },
   {
     name: "Instagram",
     link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",

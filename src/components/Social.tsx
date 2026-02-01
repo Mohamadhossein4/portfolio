@@ -1,17 +1,20 @@
-import { Github, Linkedin } from "lucide-react";
+import { Download, FileUser, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+
 
 const socialItems = [
   {
     name: "GitHub",
     link: "https://github.com/Mohamadhossein4",
     icon: <Github size={20} />,
+    isDownload: false,
   },
   {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
-    icon: <Linkedin size={20} />,
+    name: "cv",
+    link: "/cv/resume.pdf",
+    icon: <FileUser  size={20} />,
+    isDownload: true,
   },
 ];
 
@@ -20,7 +23,11 @@ const Social = () => {
     <div>
       <div className="flex flex-col items-center gap-2 bg-secondary border-2 border-white/5 rounded-4xl w-17 p-1">
         {socialItems.map((item, index) => (
-          <Link key={index} href={item.link} target="_blank">
+          <Link
+            key={index}
+            href={item.link}
+            {...(item.isDownload ? { download: true } : { target: "_blank" })}
+          >
             <div className="group relative p-4 rounded-full cursor-pointer transition-colors text-white hover:bg-primary">
               {item.icon}
               <span

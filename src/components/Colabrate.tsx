@@ -28,13 +28,17 @@ const Colabrate = () => {
       {ColabrateLink.map((items, index) => {
         return (
           <Button variant={"primary"} href={items.link} key={index}>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-between gap-4">
               <div className="text-lg">{items.name}</div>
               <div>{items.icon}</div>
             </div>
           </Button>
         );
       })}
+      <div className="text-white/50 mt-10">
+        © 2026 Mohamad. All rights reserved.
+
+      </div>
     </div>
   );
 };

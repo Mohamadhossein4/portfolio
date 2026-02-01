@@ -8,11 +8,12 @@ import {
   UserStar,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 const menuItems = [
   { name: "About", href: "/", icon: <LayoutGrid size={20} /> },
-  { name: "Project", href: "/project", icon: <SquareCode size={20} /> },
-  { name: "Skills", href: "/skills", icon: <MonitorCog size={20} /> },
-  { name: "Experience", href: "/experience", icon: <UserStar size={20} /> },
+  { name: "Project", href: "/Projects", icon: <SquareCode size={20} /> },
+  { name: "Skills", href: "/Skills", icon: <MonitorCog size={20} /> },
+  { name: "Experience", href: "/Experience", icon: <UserStar size={20} /> },
   { name: "Contact", href: "/Contact", icon: <Mail size={20} /> },
 ];
 
@@ -22,10 +23,10 @@ const Menu = () => {
     <div>
       <div className="flex flex-col items-center gap-2 bg-secondary border-2 border-white/5 rounded-4xl w-17 p-1">
         {menuItems.map((item, index) => {
-          const isActive =
-            pathName === item.href || pathName.startsWith(item.href);
+          const isActive = pathName === item.href || pathName.startsWith(`${item.href}/`);
           return (
-            <div
+            <Link
+            href={item.href}
               key={index}
             
               className={`group relative p-4 rounded-full cursor-pointer transition-colors 
@@ -44,7 +45,7 @@ const Menu = () => {
               >
                 {item.name}
               </span>
-            </div>
+            </Link>
           );
         })}
       </div>
