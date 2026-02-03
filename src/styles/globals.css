@@ -17,3 +17,6 @@
 .container {
   @apply max-w-3xl md:max-w-4xl  px-[15px] mx-auto;
 }
+	.mantine-TextInput-input{
+    width: 100%;
+  }

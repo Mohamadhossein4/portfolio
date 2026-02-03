@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "../lib/fonts/utils";
+import { cn } from "../../lib/fonts/utils";
 import { Button as MantineButton } from "@mantine/core";
 
 const buttonVariants = cva(
@@ -11,7 +11,7 @@ const buttonVariants = cva(
       variant: {
         primary: "text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary delay-150 hover:scale-105 transition-all",
         secondary:
-          "bg-secondary text-white font-semibold rounded-full",
+          "bg-white text-secondary rounded-lg",
         outline:
           "bg-transparent text-custom-teal border border-custom-teal hover:bg-custom-teal/10 rounded-lg",
       },

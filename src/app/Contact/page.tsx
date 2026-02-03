@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/ui/Button";
 import ContactForm from "@/components/ContactForm";
 import { Github, Instagram, Linkedin } from "lucide-react";
 import React from "react";
@@ -33,7 +33,7 @@ const page = () => {
       <div className="flex flex-col gap-8">
         {contactItems.map((item, index) => {
           return (
-            <div className="flex flex-col gap-8">
+            <div key={index} className="flex flex-col gap-8">
               <div className="text-white text-8xl w-230 leading-28">
                 {item.contactText}
               </div>
