@@ -9,9 +9,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary delay-150 hover:scale-105 transition-all",
+        primary: "text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary delay-200 hover:scale-105 transition-all",
         secondary:
-          "bg-white text-secondary rounded-lg",
+          "bg-white text-secondary rounded-lg elay-200 hover:scale-101 transition-all",
         outline:
           "bg-transparent text-custom-teal border border-custom-teal hover:bg-custom-teal/10 rounded-lg",
       },

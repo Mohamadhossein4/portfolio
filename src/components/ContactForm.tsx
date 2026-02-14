@@ -1,7 +1,5 @@
 import { Input, Textarea } from "@mantine/core";
-import React from "react";
 import Button from "./ui/Button";
-import { Send } from "lucide-react";
 const contactForm = [{ inputName: "Name" }, { inputName: "Email" }];
 
 const Contact = () => {
@@ -20,11 +18,11 @@ const Contact = () => {
                   style={{ width: "100%" }}
                   placeholder={item.inputName}
                   size="3xl"
-                  className="inline-block! w-full! bg-secondary text-white text-xl  px-3 py-2 rounded-lg"
+                  className="inline-block! w-full! bg-secondary text-white text-xl  px-3 py-2 rounded-xl"
                   classNames={{
                     input:
-                      "w-full bg-secondary text-white border border-zinc-700 rounded-md px-4 py-2.5 " +
-                      "placeholder:text-zinc-500 " +
+                      "w-full bg-secondary  text-white rounded-xl px-4 py-2.5 " +
+                      "placeholder:text-white/60 " +
                       "outline-none transition-all duration-150",
                     wrapper: "w-full",
                   }}
@@ -32,27 +30,26 @@ const Contact = () => {
               );
             })}
           </div>
-
           <div className="pb-6 space-y-2 mt-6">
             <Textarea
               name="Message"
               placeholder="Message"
               variant="unstyled"
-              className="w-full h-40 bg-secondary text-xl text-white rounded px-3 py-2"
+              resize="none"
+              className="bg-secondary text-xl text-white rounded-xl px-3 py-2"
               classNames={{
                 input:
-                  "w-full h-36 bg-secondary text-white border border-zinc-700 rounded-md px-4 py-2.5 " +
-                  "placeholder:text-zinc-500 " +
+                  "w-full h-40 resize-none bg-secondary text-white rounded-xl px-4 py-2.5 " +
+                  "placeholder:text-white/60 " +
                   "outline-none transition-all duration-150",
                 wrapper: "w-full",
               }}
             />
           </div>
-
           <Button
             type="submit"
             variant={"secondary"}
-            className=" w-full transition-all font-bold duration-300"
+            className=" w-full py-4 transition-all text-xl font-bold rounded-xl duration-300 hover:bg-white/80"
           >
             send
           </Button>

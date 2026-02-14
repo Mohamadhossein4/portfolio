@@ -47,7 +47,7 @@ const page = () => {
           {socialItems.map((items, index) => {
             return (
               <Button variant={"primary"} href={items.link} key={index}>
-                <div className="flex items-center justify-center gap-3">
+                <div className="flex items-center justify-center gap-3 delay-150 ">
                   <div>{items.icon}</div>
                   <div>{items.name}</div>
                 </div>
