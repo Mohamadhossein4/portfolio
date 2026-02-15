@@ -1,5 +1,5 @@
 import { Input, Textarea } from "@mantine/core";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 const contactForm = [{ inputName: "Name" }, { inputName: "Email" }];
 
 const Contact = () => {

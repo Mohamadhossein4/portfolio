@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 
 const colabrateItems = [
   {

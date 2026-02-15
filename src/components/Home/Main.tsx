@@ -1,11 +1,12 @@
-import React from "react";
-import About from "../About";
-import Experience from "../Experience";
-import Colabrate from "../Colabrate";
+"use client"
+import Snowfall from "react-snowfall";
+import About from "../Section/About";
+import Colabrate from "../Section/Colabrate";
 
 const Main = () => {
   return (
     <div className="flex flex-col  gap-20 container mt-10">
+       
       <About />
       <Colabrate />
     </div>

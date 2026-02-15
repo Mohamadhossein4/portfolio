@@ -8,6 +8,20 @@
 }
 
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 2px;
+}
+
+
 :root {
   background-color: #202224;
   
