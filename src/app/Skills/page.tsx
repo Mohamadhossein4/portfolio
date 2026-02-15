@@ -1,4 +1,4 @@
-import EgerLearn from "@/components/Section/EgerLearn";
+import EgerLearn from "@/components/Section/EagerLearn";
 import SkillTemplate from "@/components/Section/SkillTemplate";
 import React from "react";
 
