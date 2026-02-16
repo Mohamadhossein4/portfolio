@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRight, RectangleVertical } from "lucide-react";
+import { ArrowRight, ArrowUpRight, RectangleVertical } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import bonrail from "../../../public/img/projectImages/bonrail.png";
@@ -55,19 +55,19 @@ const ProjectTemplate = () => {
   return (
     <div>
       <span className="text-2xl text-white/80 ml-1">My Projects</span>
-      <div className="grid grid-cols-2 gap-3 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-20">
         {projectiItems.map((items, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col bg-secondary rounded-2xl p-2 group ../"
+              className="flex flex-col bg-secondary border-2 border-white/5 rounded-2xl p-2 group ../"
             >
               <div className="flex w-full items-center justify-between mb-6 ">
                 <div className="border border-white/10 text-white/80 text-sm py-2 px-5 rounded-xl ">
                   project
                 </div>
                 <div>
-                  <ArrowUpRight className="opacity-0 group-hover:opacity-100 text-white/80 delay-150" />
+                  <ArrowRight className="opacity-0 group-hover:opacity-100 text-white/80 delay-150 group-hover:-rotate-45 transition-all" />
                 </div>
               </div>
               <div className="flex flex-col text-white/80 mb-10">

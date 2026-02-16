@@ -18,7 +18,7 @@ const Contact = () => {
                   style={{ width: "100%" }}
                   placeholder={item.inputName}
                   size="3xl"
-                  className="inline-block! w-full! bg-secondary text-white text-xl  px-3 py-2 rounded-xl"
+                  className="inline-block! w-full!  bg-secondary text-white text-xl  px-3 py-2 rounded-xl"
                   classNames={{
                     input:
                       "w-full bg-secondary  text-white rounded-xl px-4 py-2.5 " +

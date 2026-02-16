@@ -12,8 +12,16 @@ const learnItems = [
 
 const sourceItems = [
   {
-    name: "My Source",
+    name: "DevSub.ir",
     link: "https://devsub.ir/",
+     icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
+  },{
+    name: "Sabzlearn.ir",
+    link: "https://sabzlearn.ir/",
+     icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
+  },{
+    name: "Git.ir",
+    link: "https://git.ir/",
      icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
   },
   
@@ -25,24 +33,26 @@ const EgerLearn = () => {
       {learnItems.map((item, index) => {
         return (
             <div key={index}>
-          <div className="text-white text-4xl w-230 leading-28">
+          <div className="text-white text-4xl leading-28">
             {item.learnText}
           </div>
-          <div className='text-white/70 w-230'>{item.learnDescription}</div>
+          <div className='text-white/70'>{item.learnDescription}</div>
           </div>
         );
       })}
+      <div className='text-2xl text-white'>My Refrence</div>
+      <div className='flex items-center gap-4'>
       {sourceItems.map((item, index) => {
         return (
-          <Button className='w-47' variant={"primary"} target='_blank' href={item.link} key={index}>
-            <div className="flex items-center justify-between gap-4">
+          <Button className='w-40' variant={"primary"} target='_blank' href={item.link} key={index}>
+            <div className="flex items-center justify-center gap-2">
               <div className="text-lg">{item.name}</div>
               <div>{item.icon}</div>
             </div>
           </Button>
         );
       })}
-      
+      </div>
     </div>
   )
 }

@@ -82,10 +82,10 @@ const SkillTemplate = () => {
   return (
     <div>
       <span className="text-2xl text-white/80 ml-1">My Skills</span>
-      <div className="grid grid-cols-2 gap-3 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-20">
         {skillsItam.map((item, index) => {
           return (
-            <div key={index} className="flex flex-col gap-4 bg-secondary rounded-xl p-3 text-white/70 hover:scale-103 transition-all delay-150">
+            <div key={index} className="flex flex-col gap-4 border-2 border-white/5 bg-secondary rounded-xl p-3 text-white/70 hover:scale-103 transition-all delay-150">
               <div className="flex items-center justify-between">
                 <Image className="w-10 h-10" src={item.image} alt={item.name}></Image>
                 <div className="flex gap-0.5 text-white ">
