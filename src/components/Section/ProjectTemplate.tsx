@@ -2,61 +2,23 @@
 import { ArrowRight, ArrowUpRight, RectangleVertical } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
-import bonrail from "../../../public/img/projectImages/bonrail.png";
-import raheparvaz from "../../../public/img/projectImages/raheparvaz.png";
-import dkd from "../../../public/img/projectImages/dkd.png";
-import dkdpagecraft from "../../../public/img/projectImages/dkdpagecraft.png";
 
-const projectiItems = [
-  {
-    name: "bonrail rail way company",
-    description:
-      "functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS.",
-    image: bonrail,
-    status: "coming soon",
-  },
-  {
-    name: "raheparvaz Travel Agency",
-    description:
-      "functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS.",
-    image: raheparvaz,
-    status: "public",
-  },
-  {
-    name: "raheparvaz Travel Agency",
-    description:
-      "functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS.",
-    image: dkd,
-    status: "private",
-  },
-  {
-    name: "bonrail rail way company",
-    description:
-      "functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS.",
-    image: dkdpagecraft,
-    status: "private",
-  },
-];
 
-interface ProjectProp {
-  items: {
+
+interface ProjectTemplateProps {
+  projectTemplateitems: {
     name: string;
     description: string;
     image: StaticImageData;
   }[];
 }
 
-const ImageStyle = {
-  width: "300px",
-  height: "800px",
-};
-
-const ProjectTemplate = () => {
+const ProjectTemplate = ({projectTemplateitems}:ProjectTemplateProps) => {
   return (
     <div>
       <span className="text-2xl text-white/80 ml-1">My Projects</span>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-20">
-        {projectiItems.map((items, index) => {
+        {projectTemplateitems.map((items, index) => {
           return (
             <div
               key={index}

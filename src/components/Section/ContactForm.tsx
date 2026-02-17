@@ -1,15 +1,20 @@
 import { Input, Textarea } from "@mantine/core";
 import Button from "../ui/Button";
-const contactForm = [{ inputName: "Name" }, { inputName: "Email" }];
 
-const Contact = () => {
+interface ContactFormProps {
+  contactFormItems: {
+    inputName: string;
+  }[];
+}
+
+const ContactForm = ({ contactFormItems }: ContactFormProps) => {
   return (
     <div className="container">
       <div className="flex flex-col">
         <span className="text-white/80 text-lg mb-10">send a message</span>
         <form action="https://formspree.io/f/mvgqkgbq" method="POST">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {contactForm.map((item, index) => {
+            {contactFormItems.map((item, index) => {
               return (
                 <Input
                   key={index}
@@ -18,6 +23,7 @@ const Contact = () => {
                   style={{ width: "100%" }}
                   placeholder={item.inputName}
                   size="3xl"
+                  autoComplete="off"
                   className="inline-block! w-full!  bg-secondary text-white text-xl  px-3 py-2 rounded-xl"
                   classNames={{
                     input:
@@ -36,6 +42,7 @@ const Contact = () => {
               placeholder="Message"
               variant="unstyled"
               resize="none"
+              autoComplete="off"
               className="bg-secondary text-xl text-white rounded-xl px-3 py-2"
               classNames={{
                 input:
@@ -59,4 +66,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;
