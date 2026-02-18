@@ -17,17 +17,17 @@ const ColabrateLink = [
 ];
 const Colabrate = () => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col items-center md:items-start gap-2 mb-20">
       {colabrateItems.map((items, index) => {
         return (
-          <div key={index} className="text-white text-7xl w-230 leading-28">
+          <div key={index} className="text-white text-4xl lg:text-7xl leading-28">
             {items.text}
           </div>
         );
       })}
       {ColabrateLink.map((items, index) => {
         return (
-          <Button variant={"primary"} href={items.link} key={index}>
+          <Button className="w-38!" variant={"primary"} href={items.link} key={index}>
             <div className="flex items-center justify-between gap-4">
               <div className="text-lg">{items.name}</div>
               <div>{items.icon}</div>

@@ -9,7 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "text-white gap-3 px-8 py-4  w-38 rounded-4xl bg-secondary delay-200 hover:scale-105 transition-all",
+        primary:
+          "text-white gap-3 lg:px-4 py-4 rounded-4xl bg-secondary delay-200 hover:scale-105 transition-all",
         secondary:
           "bg-white text-secondary rounded-lg elay-200 hover:scale-101 transition-all",
         outline:
@@ -26,7 +27,7 @@ const buttonVariants = cva(
       variant: "primary",
       size: "md",
     },
-  }
+  },
 );
 
 interface ButtonProps

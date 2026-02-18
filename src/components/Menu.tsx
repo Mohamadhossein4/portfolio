@@ -21,7 +21,7 @@ const Menu = () => {
   const pathName = usePathname();
   return (
     <div>
-      <div className="flex flex-col items-center gap-2 bg-secondary border-2 border-white/5 rounded-4xl w-17 p-1">
+      <div className="flex flex-row lg:flex-col items-center gap-2 bg-secondary border-2 border-white/5 rounded-4xl lg:w-17 p-1">
         {menuItems.map((item, index) => {
           const isActive = pathName === item.href || pathName.startsWith(`${item.href}/`);
           return (
@@ -38,7 +38,7 @@ const Menu = () => {
             >
               {item.icon}
               <span
-                className="absolute left-full ml-3 top-1/2 -translate-y-1/2
+                className="hidden lg:absolute left-full ml-3 top-1/2 -translate-y-1/2
               px-3 py-2 rounded-3xl text-black bg-white text-sm whitespace-nowrap
               opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
               transition-all duration-200 pointer-events-none"

@@ -14,7 +14,7 @@ interface EagerLearnProps {
 
 const EgerLearn = ({ learnItems, sourceItems }: EagerLearnProps) => {
   return (
-    <div className="flex flex-col gap-8 mb-10">
+    <div className="flex flex-col gap-8 mb-30">
       {learnItems.map((item, index) => {
         return (
           <div key={index}>
@@ -26,7 +26,7 @@ const EgerLearn = ({ learnItems, sourceItems }: EagerLearnProps) => {
         );
       })}
       <div className="text-2xl text-white">My Refrence</div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center flex-wrap lg:flex-nowrap justify-center md:justify-start  gap-2 lg:gap-4">
         {sourceItems.map((item, index) => {
           return (
             <Button

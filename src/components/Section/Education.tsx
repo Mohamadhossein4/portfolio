@@ -13,7 +13,7 @@ const Education = ({ educationItems }: EducationProps) => {
   return (
     <div>
       <span className="text-2xl text-white/80 ml-1">My Education</span>
-      <div className="grid grid-cols-1 gap-3 mt-6 ">
+      <div className="grid grid-cols-1 gap-3 mt-6 mb-30 lg:mb-16">
         {educationItems.map((item, index) => {
           return (
             <div
@@ -22,8 +22,8 @@ const Education = ({ educationItems }: EducationProps) => {
             >
               <div className="text-lg text-white">{item.title}</div>
               <div className="flex items-center justify-between">
-                <div className="text-white/60">{item.educationName}</div>
-                <div className="text-white">{item.date}</div>
+                <div className="text-white/60 text-sm lg:text-base">{item.educationName}</div>
+                <div className="text-white text-sm lg:text-base">{item.date}</div>
               </div>
               <div className="text-sm text-white/60">{item.description}</div>
             </div>

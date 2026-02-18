@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { FileUser, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Button from "../ui/Button";
@@ -9,7 +9,7 @@ const aboutItems = [
     interduce: "Hey, I'm Mohamad Hosein a",
     position: "Frontend Developer",
     about:
-      "My name is Mohamad Hossein Gholikhah, I am a Frontend Developer with a passion for creating beautiful and functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS. I am always looking for new challenges and opportunities to learn and grow as a developer.",
+      "My name is Mohamad Hossein Gholikhah, I am a Frontend Developer with a passion for creating,  beautiful and functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS. I am always looking for new challenges and opportunities to learn and grow as a developer.",
   },
 ];
 const socialItems = [
@@ -19,14 +19,21 @@ const socialItems = [
     icon: <Github size={20} />,
   },
   {
-     name: "LinkedIn",
-     link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
-     icon: <Linkedin size={20} />,
-   },
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
+    icon: <Linkedin size={20} />,
+  },
   {
     name: "Instagram",
     link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
     icon: <Instagram size={20} />,
+  },
+];
+const cvItem = [
+  {
+    name: "cv",
+    link: "/cv/resume.pdf",
+    icon: <FileUser size={20} />,
   },
 ];
 const About = () => {
@@ -35,7 +42,7 @@ const About = () => {
       <div className="">
         {aboutItems.map((items, index) => {
           return (
-            <div key={index} className="flex flex-col gap-12">
+            <div key={index} className="flex flex-col gap-12 -mb-18 lg:mb-0">
               <div className="flex items-center gap-6">
                 <div className="relative mb-4">
                   <div className="absolute w-1.5 h-1.5 bg-amber-300 rounded-full z-10 left-1 top-1"></div>
@@ -43,26 +50,31 @@ const About = () => {
                 </div>
                 <div className="text-white">{items.status}</div>
               </div>
-              <div className="text-white text-7xl w-230 leading-28">
+              <div className="text-white text-4xl lg:text-7xl leading-14 lg:leading-28 text-pretty">
                 {items.interduce}
                 <span className="text-white/40 ml-4">{items.position}</span>
               </div>
-              <div className="flex items-center gap-8 -mt-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4  items-center gap-2 lg:gap-8 -mt-6">
                 {socialItems.map((items, index) => {
                   return (
-                    
-                    <Button variant={"primary"} href={items.link} key={index}>
-                      <div
-                      className="flex items-center justify-center gap-3"
-                    >
-                      <div>{items.icon}</div>
-                      <div>{items.name}</div>
-                    </div>
+                    <Button variant={"primary"} href={items.link} key={index} target="_blank">
+                      <div className="flex items-center justify-center gap-3">
+                        <div>{items.icon}</div>
+                        <div>{items.name}</div>
+                      </div>
                     </Button>
                   );
                 })}
+                <Button className="lg:hidden" variant={"primary"} href={"/cv/resume.pdf"}>
+                  <div className="flex items-center justify-center gap-3">
+                    <div>
+                      <FileUser size={20} />
+                    </div>
+                    <div>Resume</div>
+                  </div>
+                </Button>
               </div>
-              <div className="text-white/40 leading-relaxed border-b border-white/40 pb-14">
+              <div className="text-white/40 text-justify text-pretty leading-relaxed border-b border-white/40 pb-14">
                 {items.about}
               </div>
             </div>

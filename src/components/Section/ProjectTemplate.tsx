@@ -17,7 +17,7 @@ const ProjectTemplate = ({projectTemplateitems}:ProjectTemplateProps) => {
   return (
     <div>
       <span className="text-2xl text-white/80 ml-1">My Projects</span>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10 mb-26 lg:mb-0">
         {projectTemplateitems.map((items, index) => {
           return (
             <div

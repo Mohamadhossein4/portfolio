@@ -10,7 +10,7 @@ interface ContactFormProps {
 const ContactForm = ({ contactFormItems }: ContactFormProps) => {
   return (
     <div className="container">
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-30 lg:mb-0">
         <span className="text-white/80 text-lg mb-10">send a message</span>
         <form action="https://formspree.io/f/mvgqkgbq" method="POST">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

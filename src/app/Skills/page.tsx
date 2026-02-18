@@ -102,6 +102,10 @@ const sourceItems = [
     name: "Git.ir",
     link: "https://git.ir/",
     icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
+  },{
+    name: "Git.ir",
+    link: "https://git.ir/",
+    icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
   },
 ];
 

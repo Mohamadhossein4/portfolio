@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import {
   ColorSchemeScript,
@@ -25,16 +24,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html  className={`${gilroy.className} scroll-smooth`} lang="en"  {...mantineHtmlProps}>
+    <html
+      className={`${gilroy.className} scroll-smooth`}
+      lang="en"
+      {...mantineHtmlProps}
+    >
       <head>
         <ColorSchemeScript />
       </head>
       <body>
-        <SnowWall/>
-        <div className="flex flex-col gap-10 fixed top-40 left-6 z-0!">
-        <Menu />
-        <Social/>
-      </div>
+        <SnowWall />
+        <div className="flex flex-row lg:flex-col gap-10 fixed bottom-2 left-1/2 -translate-x-1/2 lg:top-40 lg:left-6 lg:translate-x-0 z-20">
+          <Menu />
+          <div className="hidden lg:block">
+          <Social/>
+          </div>
+        </div>
+
         <main>
           <MantineProvider>{children}</MantineProvider>
         </main>
@@ -42,4 +48,3 @@ export default function RootLayout({
     </html>
   );
 }
-  

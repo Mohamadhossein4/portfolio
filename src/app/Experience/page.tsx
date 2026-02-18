@@ -41,13 +41,13 @@ const educationItems = [
   {
     title: "Software post graduate",
     description: "Fundamentals of Software Engineering",
-    educationName: "Azad University, Ray Branch",
+    educationName: "Azad University, Yadegar Branch",
     date: "1402 - 1404",
   },
   {
     title: "Software Bachelor's degree",
     description: "Principles of Software Engineering",
-    educationName: "Azad University, Ray Branch",
+    educationName: "Azad University, Yadegar Branch",
     date: "1404 - now",
   },
 ];
