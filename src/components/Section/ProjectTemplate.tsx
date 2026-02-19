@@ -37,7 +37,7 @@ const ProjectTemplate = ({projectTemplateitems}:ProjectTemplateProps) => {
                 <div className="text-white/30">Description</div>
               </div>
               <div className="flex">
-                <div className="h-50 overflow-hidden group  rounded-2xl opacity-70">
+                <div className="h-40 lg:h-50 overflow-hidden group  rounded-2xl opacity-70">
                   <Image
                     src={items.image}
                     alt=""
