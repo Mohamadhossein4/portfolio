@@ -4,77 +4,98 @@ import React from "react";
 import react from "../../../public/img/skillImages/react.png";
 import javascript from "../../../public/img/skillImages/javascript.png";
 import typescript from "../../../public/img/skillImages/typescript.png";
+import css from "../../../public/img/skillImages/css.png";
+import html from "../../../public/img/skillImages/html.png";
+import docker from "../../../public/img/skillImages/docker.png";
+import git from "../../../public/img/skillImages/git.png";
+import nextjs from "../../../public/img/skillImages/nextjs.png";
+import redux from "../../../public/img/skillImages/redux.png";
+import php from "../../../public/img/skillImages/php.png";
+import tailwind from "../../../public/img/skillImages/tailwind.png";
+import wordpress from "../../../public/img/skillImages/wordpress.png";
 import { ArrowUpRight, Github } from "lucide-react";
 
 const skillTemplateItems = [
   {
-    name: "react",
+    name: "html 5",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: react,
+      "The standard markup language used to structure and organize content on web pages.",
+    image: html,
+    star: 4,
+  },
+  {
+    name: "css 3",
+    description:
+      "A stylesheet language used to control the appearance, layout, and animations of web pages.",
+    image: css,
     star: 3,
   },
   {
-    name: "react",
+    name: "tailwind",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
+      "A utility-first CSS framework that enables rapid UI development with predefined classes.",
+    image: tailwind,
+    star: 4,
+  },
+  {
+    name: "javascript",
+    description:
+      "A programming language that adds interactivity and dynamic behavior to websites.",
     image: javascript,
     star: 3,
   },
   {
-    name: "react",
+    name: "typescript",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
+      "A typed superset of JavaScript that improves code reliability and maintainability.",
     image: typescript,
     star: 3,
   },
   {
     name: "react",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: react,
-    star: 3,
-  },
-  {
-    name: "react",
-    description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: javascript,
-    star: 3,
-  },
-  {
-    name: "react",
-    description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
+      "A JavaScript library for building fast, interactive, and component-based user interfaces.",
     image: typescript,
     star: 3,
   },
   {
-    name: "react",
+    name: "next js",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: react,
-    star: 3,
+      "A React framework that provides server-side rendering, routing, and performance optimizations.",
+    image: nextjs,
+    star: 2,
   },
   {
-    name: "react",
+    name: "redux",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: javascript,
-    star: 3,
+      "A predictable state management library commonly used to manage application-wide data in React apps.",
+    image: redux,
+    star: 2,
   },
   {
-    name: "react",
+    name: "docker",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: typescript,
-    star: 3,
+      "A containerization platform that packages applications and their dependencies into portable containers.",
+    image: docker,
+    star: 2,
   },
   {
-    name: "react",
+    name: "git",
     description:
-      "React is a powerful JavaScript library for building fast, interactive, and reusable user interfaces.",
-    image: typescript,
+      "A distributed version control system used to track code changes and collaborate on software projects.",
+    image: git,
+    star: 3,
+  },{
+    name: "php",
+    description:
+      "A server-side scripting language widely used for web development and dynamic websites.",
+    image: php,
+    star: 2,
+  },{
+    name: "wordpress",
+    description:
+      "An open-source content management system (CMS) used to create and manage websites and blogs.",
+    image: wordpress,
     star: 3,
   },
 ];
@@ -103,8 +124,8 @@ const sourceItems = [
     link: "https://git.ir/",
     icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
   },{
-    name: "Git.ir",
-    link: "https://git.ir/",
+    name: "next1code.ir",
+    link: "https://next1code.ir/",
     icon: <ArrowUpRight className="text-white/80 delay-150" size={22} />,
   },
 ];

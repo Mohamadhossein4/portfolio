@@ -38,9 +38,9 @@ const Menu = () => {
             >
               {item.icon}
               <span
-                className="hidden lg:absolute left-full ml-3 top-1/2 -translate-y-1/2
+                className="absolute left-full ml-3 top-1/2 -translate-y-1/2
               px-3 py-2 rounded-3xl text-black bg-white text-sm whitespace-nowrap
-              opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+              opacity-0 scale-95 lg:group-hover:opacity-100 group-hover:scale-100
               transition-all duration-200 pointer-events-none"
               >
                 {item.name}

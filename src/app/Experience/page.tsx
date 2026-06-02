@@ -4,15 +4,15 @@ import React from "react";
 
 const workExperienceitems = [
   {
-    name: "dkd",
-    date: "1403 - now",
-    position: "Junior FrontEnd developer",
-    description: "Design, development and implementation of applications",
+    name: "iranZak",
+    date: "1401 - 1401",
+    position: "Network Intern",
+    description: "Configuration, monitoring and troubleshooting of network infrastructure",
     achievement: [
-      "Successful collaboration with teams",
-      "Delivery of high-quality software within strict deadlines",
-      "Optimization of application performance",
-      "Effective communication with team members",
+      "Assisted in network setup and configuration",
+  "Monitored network performance and connectivity",
+  "Troubleshot basic network issues",
+  "Collaborated with IT and network teams",
     ],
     technology: ["React", "Next.js", "Docker", "Docker"],
   },
@@ -20,7 +20,7 @@ const workExperienceitems = [
     name: "dkd",
     date: "1403 - now",
     position: "Junior FrontEnd developer",
-    description: "Design, development and implementation of applications",
+    description: "Development and maintenance of user-friendly web interfaces",
     achievement: [
       "Successful collaboration with teams",
       "Delivery of high-quality software within strict deadlines",

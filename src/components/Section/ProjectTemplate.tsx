@@ -34,7 +34,7 @@ const ProjectTemplate = ({projectTemplateitems}:ProjectTemplateProps) => {
               </div>
               <div className="flex flex-col text-white/80 mb-10">
                 <div className="">{items.name}</div>
-                <div className="text-white/30">Description</div>
+                <div className="text-white/30 mt-2 text-[13px]">{items.description}</div>
               </div>
               <div className="flex">
                 <div className="h-40 lg:h-50 overflow-hidden group  rounded-2xl opacity-70">

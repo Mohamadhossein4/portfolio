@@ -25,7 +25,7 @@ const socialItems = [
   },
   {
     name: "Instagram",
-    link: "https://www.linkedin.com/in/mohamad-hossein-gholikhah-009032283/",
+    link: "https://www.instagram.com/org.mohamad.84/",
     icon: <Instagram size={20} />,
   },
 ];
@@ -65,7 +65,7 @@ const About = () => {
                     </Button>
                   );
                 })}
-                <Button className="lg:hidden" variant={"primary"} href={"/cv/resume.pdf"}>
+                <Button variant={"primary"} href={"/cv/resume.pdf"}>
                   <div className="flex items-center justify-center gap-3">
                     <div>
                       <FileUser size={20} />

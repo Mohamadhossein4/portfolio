@@ -32,7 +32,7 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body>
+      <body className="bg-primary">
         <SnowWall />
         <div className="flex flex-row lg:flex-col gap-10 fixed bottom-2 left-1/2 -translate-x-1/2 lg:top-40 lg:left-6 lg:translate-x-0 z-20">
           <Menu />
