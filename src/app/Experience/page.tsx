@@ -14,7 +14,7 @@ const workExperienceitems = [
   "Troubleshot basic network issues",
   "Collaborated with IT and network teams",
     ],
-    technology: ["React", "Next.js", "Docker", "Docker"],
+    technology: ["Network", "CCNA", "TCP/IP", "Linux"],
   },
   {
     name: "dkd",
