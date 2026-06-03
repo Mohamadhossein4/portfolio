@@ -55,7 +55,7 @@ const skillTemplateItems = [
     name: "react",
     description:
       "A JavaScript library for building fast, interactive, and component-based user interfaces.",
-    image: typescript,
+    image: react,
     star: 3,
   },
   {
