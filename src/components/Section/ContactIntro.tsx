@@ -20,7 +20,7 @@ const ContactIntro = ({ socialItems, contactItems }: ContactIntroProps) => {
       {contactItems.map((item, index) => {
         return (
           <div key={index} className="flex flex-col gap-2 lg:gap-8">
-            <div className="text-4xl text-white/80 ml-1">
+            <div className="text-2xl md:text-7xl text-white/80 ml-1">
               {item.contactText}
             </div>
             <div className="text-white/40 text-lg ml-1.5">
