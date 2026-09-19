@@ -1,5 +1,7 @@
+"use client"
 import Education from "@/components/Section/Education";
 import WorkExperience from "@/components/Section/WorkExperience";
+import { motion } from "motion/react";
 import React from "react";
 
 const workExperienceitems = [
@@ -54,10 +56,26 @@ const educationItems = [
 
 const page = () => {
   return (
-    <div className="container flex flex-col gap-10 mt-10">
+      <motion.div
+      initial={{
+        opacity: 0,
+        x: -100,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      viewport={{
+        once: true,
+        amount: 0.1,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }} className="container flex flex-col gap-10 mt-10">
       <WorkExperience workExperienceitems={workExperienceitems} />
       <Education educationItems={educationItems} />
-    </div>
+    </motion.div>
   );
 };
 

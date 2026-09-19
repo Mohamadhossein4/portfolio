@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 
 const aboutItems = [
   {
-    status: "Look for better Job",
+    status: "Available fore hire",
     interduce: "Hey, I'm Mohamad Hosein a",
     position: "Frontend Developer",
     about:
@@ -45,8 +45,8 @@ const About = () => {
             <div key={index} className="flex flex-col gap-12 -mb-18 lg:mb-0">
               <div className="flex items-center gap-6">
                 <div className="relative mb-4">
-                  <div className="absolute w-1.5 h-1.5 bg-amber-300 rounded-full z-10 left-1 top-1"></div>
-                  <div className="absolute w-3.5 h-3.5 bg-amber-100 rounded-full opacity-10"></div>
+                  <div className="absolute w-1.5 h-1.5 bg-green-300 rounded-full z-10 left-1 top-1"></div>
+                  <div className="absolute w-3.5 h-3.5 bg-green-100 rounded-full opacity-10"></div>
                 </div>
                 <div className="text-white">{items.status}</div>
               </div>

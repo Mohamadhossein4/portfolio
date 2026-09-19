@@ -1,3 +1,4 @@
+"use client";
 import EgerLearn from "@/components/Section/EagerLearn";
 import SkillTemplate from "@/components/Section/SkillTemplate";
 import React from "react";
@@ -14,6 +15,7 @@ import php from "../../../public/img/skillImages/php.png";
 import tailwind from "../../../public/img/skillImages/tailwind.png";
 import wordpress from "../../../public/img/skillImages/wordpress.png";
 import { ArrowUpRight, Github } from "lucide-react";
+import { motion } from "motion/react";
 
 const skillTemplateItems = [
   {
@@ -132,10 +134,26 @@ const sourceItems = [
 
 const page = () => {
   return (
-    <div className="container flex flex-col gap-14 mt-10">
+      <motion.div
+      initial={{
+        opacity: 0,
+        x: -100,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      viewport={{
+        once: true,
+        amount: 0.1,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }} className="container flex flex-col gap-14 mt-10">
       <SkillTemplate skillTemplateItems={skillTemplateItems} />
       <EgerLearn learnItems={learnItems} sourceItems={sourceItems} />
-    </div>
+    </motion.div>
   );
 };
 
