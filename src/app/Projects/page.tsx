@@ -7,6 +7,7 @@ import raheparvaz from "../../../public/img/projectImages/raheparvaz.png";
 import dkd from "../../../public/img/projectImages/dkd.png";
 import dkdpagecraft from "../../../public/img/projectImages/dkdpagecraft.png";
 import resume from "../../../public/img/projectImages/resume.png";
+import paneladmin  from "../../../public/img/projectImages/paneladmin.png";
 
 import { motion } from "motion/react";
 
@@ -26,11 +27,11 @@ const projectTemplateitems = [
     status: "public",
   },
   {
-    name: "dkd page craft",
+    name: "resturant panel admin management",
     description:
-      "functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS.",
-    image: dkdpagecraft,
-    status: "private",
+      "A centralized admin panel for managing restaurant menus, food items, categories, pricing, orders",
+    image: paneladmin,
+    status: "public",
   },
   {
     name: "resume template",
@@ -40,9 +41,16 @@ const projectTemplateitems = [
     status: "private",
   },
   {
+    name: "dkd page craft",
+    description:
+      "functional web applications. I have experience working with a variety of technologies, including React, Next.js, Tailwind CSS.",
+    image: dkdpagecraft,
+    status: "private",
+  },
+  {
     name: "dkd software company",
     description:
-      "dkd is an software compony that make application.",
+      "DKD is a software company specialized in designing and developing high-quality applications.",
     image: dkd,
     status: "private",
   },
