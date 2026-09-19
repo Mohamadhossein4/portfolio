@@ -47,7 +47,6 @@ const About = () => {
             key={index}
             className="flex flex-col gap-12 -mb-18 lg:mb-0"
           >
-            {/* Status */}
             <motion.div
               initial={{ opacity: 0, x: -80 }}
               animate={{ opacity: 1, x: 0 }}
@@ -58,8 +57,8 @@ const About = () => {
               className="flex items-center gap-6"
             >
               <div className="relative mb-4">
-                <div className="absolute w-1.5 h-1.5 bg-amber-300 rounded-full z-10 left-1 top-1" />
-                <div className="absolute w-3.5 h-3.5 bg-amber-100 rounded-full opacity-10" />
+                <div className="absolute w-1.5 h-1.5 bg-green-500 rounded-full z-10 left-1 top-1" />
+                <div className="absolute w-3.5 h-3.5 bg-green-100 rounded-full opacity-10" />
               </div>
 
               <div className="text-white">
@@ -67,7 +66,6 @@ const About = () => {
               </div>
             </motion.div>
 
-            {/* Introduction */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -85,7 +83,6 @@ const About = () => {
               </span>
             </motion.div>
 
-            {/* Social buttons */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -120,7 +117,6 @@ const About = () => {
               </Button>
             </motion.div>
 
-            {/* About text */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
