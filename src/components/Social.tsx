@@ -12,7 +12,7 @@ const socialItems = [
   },
   {
     name: "cv",
-    link: "/cv/resume.pdf",
+    link: "/cv/Gholikhah.pdf",
     icon: <FileUser  size={20} />,
     isDownload: true,
   },

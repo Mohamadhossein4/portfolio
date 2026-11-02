@@ -40,7 +40,7 @@ const ContactIntro = ({ socialItems, contactItems }: ContactIntroProps) => {
             </Button>
           );
         })}
-         <Button className="lg:hidden" variant={"primary"} href={"/cv/resume.pdf"} >
+         <Button className="lg:hidden" variant={"primary"} href={"/cv/Gholikhah.pdf"} >
                   <div className="flex items-center justify-center gap-3">
                     <div>
                       <FileUser size={20} />

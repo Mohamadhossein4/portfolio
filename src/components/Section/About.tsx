@@ -34,7 +34,7 @@ const socialItems = [
 const cvItem = [
   {
     name: "cv",
-    link: "/cv/resume.pdf",
+    link: "/cv/Gholikhah.pdf",
     icon: <FileUser size={20} />,
   },
 ];
@@ -109,7 +109,7 @@ const About = () => {
                 );
               })}
 
-              <Button variant="primary" href="/cv/resume.pdf">
+              <Button variant="primary" href="/cv/Gholikhah.pdf">
                 <div className="flex items-center justify-center gap-3">
                   <FileUser size={20} />
                   <div>Resume</div>
